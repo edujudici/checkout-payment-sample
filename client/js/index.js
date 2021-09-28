@@ -38,7 +38,7 @@ function createCheckoutButton(preference) {
   
   // The source domain must be completed according to the site for which you are integrating.
   // For example: for Argentina ".com.ar" or for Brazil ".com.br".
-  script.src = "https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js";
+  script.src = "https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js";
   script.type = "text/javascript";
   script.dataset.preferenceId = preference;
   document.getElementById("button-checkout").innerHTML = "";
