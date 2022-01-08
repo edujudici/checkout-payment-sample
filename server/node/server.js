@@ -31,7 +31,11 @@ app.post("/create_preference", (req, res) => {
 
 	mercadopago.preferences.create(preference)
 		.then(function (response) {
-			res.json({id :response.body.id})
+			res.json({
+				id :response.body.id,
+				init_point: response.body.init_point,
+				sandbox_init_point: response.body.sandbox_init_point
+			})
 		}).catch(function (error) {
 			console.log(error);
 		});
